@@ -10,7 +10,7 @@ namespace CodingPad.ConsoleApp
     public class FileInfo
     {
         public IEnumerable<CollectionData> GetTopNCollections(int n, List<FileData> fileDatas)
-        {
+        {  
             var result = fileDatas
                         .SelectMany(
                             fileData => fileData.Collections,
